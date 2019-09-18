@@ -40,9 +40,6 @@ fn pig_latin(string: &str) -> String {
     }
 }
 
-fn to_uppercase(text: &str) -> String {
-    text.to_string()
-}
 
 fn main() {
     let mut integers = vec![1,2,3,4,5,6,7,8,9,10];
@@ -54,10 +51,11 @@ fn main() {
 
     println!("{:#?}", map_integers);
 
-    println!("{}", pig_latin(""));
-    println!("{}", pig_latin("apple"));
+    let teste = "teste";
+    let apple = "apple";
 
-    let teste = String::from("teste");
-    println!("{}", to_uppercase(&teste));
+    println!("{}", pig_latin(teste));
+    println!("{}", pig_latin(apple));
+    println!("original strings: {}, {}", teste, apple);
 
 }
